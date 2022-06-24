@@ -1,8 +1,10 @@
 * {
     box-sizing: border-box;
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
 }
 
 body {
@@ -29,6 +31,7 @@ body>div {
 .title {
     flex: 1;
     text-align: center;
+    color: darkcyan;
 }
 
 /* Content */
@@ -39,8 +42,6 @@ body>div {
     align-items: center;
     height: 100vh;
     background-color: white;
-    
-
     flex: 6;
     
 }
@@ -48,4 +49,37 @@ body>div {
 .content>div {
     flex: 1;
     width: 100%;
+    padding: 0em 0em 0em 2em;
+}
+
+/* Intro */
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+
+/* Form */
+form {
+    display: flex;
+    width: 60vw;
+    flex-flow: row wrap;
+}
+
+label {
+    position: relative;
+    width: 15rem;
+    margin-bottom: 15px;
+}
+
+input {
+    font-family: customFontBold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(224, 224, 224);
+    font-size: .9rem;
+    margin-top: 3px;
 }
